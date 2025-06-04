@@ -10,14 +10,13 @@ function toggleCard(card) {
     showSideBar = !showSideBar; 
   
     if(showSideBar){
-      navegacao.style.visibility='hidden';
+      navegacao.style.marginLeft='-300vw';
     }
     else{
-      navegacao.style.visibility="visible";
+      navegacao.style.marginLeft="-65vw";
     }
-    if(window.length<1024){
-      window
-    }
+ 
+  
   }
   function ModoEScuro(){
     document.body.style.backgroundColor = "#3236ab"; 
@@ -45,6 +44,7 @@ function toggleCard(card) {
     });
     document.getElementById("claro").style.display = "none";
     document.getElementById("colorButton").style.display = "block";
+   
     document.getElementById('navegacao').style.backgroundColor="black";    
     document.querySelector('a').style.hover="#ff6600";
     document.querySelectorAll("a").forEach(link => {
@@ -86,6 +86,7 @@ function toggleCard(card) {
         link.style.color = "black"; 
     });
     document.getElementById("claro").style.display = "block";
+   
     document.getElementById("colorButton").style.display = "none";
     document.getElementById('navegacao').style.backgroundColor="#7792ff";
     document.querySelectorAll("a").forEach(link => {
