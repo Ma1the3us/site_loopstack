@@ -127,10 +127,16 @@ nav svg{
           
           
           }
-         
+        @media (min-width:768px){
+
+            nav {
+                 visibility:visible;
+
+            }
+        } 
     @media  (max-width:768px){
         
-        
+      
         .botao_estrela svg,.botaoTrocaFundo svg{
             margin-left: 50%;
           }
@@ -159,7 +165,8 @@ nav svg{
             width: auto;
             height:auto;
             animation-duration: 1s;
-            margin-left:-1000vw;
+            visibility:hidden;
+            margin-left:-65vw;
           
         }
         
@@ -188,7 +195,10 @@ nav svg{
         }
     
         img {
-            max-width: 300px; 
+            max-width: 250px; 
+            max-height:250px ; 
+          
+       
         }
     
         .textocliente {
@@ -200,13 +210,17 @@ nav svg{
         .EspecialidadesTec {
             flex-direction: column; 
             align-items: center;
+       
+            
         }
     
         .imgEspecialidadesTec img {
             align-items: center;
             max-width: 250px; 
+            align-self: center;
+        
         }
-        .imgclientes {
+        .imgclientes, .solo{
             
             margin-top: 40%;
             
@@ -248,7 +262,19 @@ nav svg{
             margin-bottom:30% ;
             
         }
-      
+      .imgclientes,.solo{
+        max-height: 400px;
+        margin-bottom:10px ;
+      }
+
+       .solo{
+        margin-top: 110%;
+       max-height:400px;
+       margin-bottom:10%
+      }
+     .imgEspecialidadesTec{
+        margin-right:10%  ;
+     }
        
        
     }
@@ -319,8 +345,9 @@ h1{
 }
 
 
-.imgclientes {
+.imgclientes, .solo {
     text-align: center;
+    
     
 
 }
@@ -342,11 +369,13 @@ img {
     text-align: center;
     margin-left: 10%;
     color:black;
-  margin-bottom:10%
+ 
 }
 
 
 @media (max-width: 1024px) {
+
+ 
        .card {
       flex: 1 1 100%; 
 
@@ -368,6 +397,7 @@ img {
 
     img {
         max-width: 500px; 
+        
     }
 
     .textocliente {
@@ -383,7 +413,8 @@ img {
    .card-back {
     transform: rotateY(180deg);
     height:300px ;
-      
+    
+
 }
 
 }
@@ -395,10 +426,12 @@ img {
     display: flex; 
     justify-content: space-between; 
     align-items: center;
-    margin: 20px auto; 
+  
     width: 90%; 
     flex-wrap: wrap; 
+    margin: auto 10%;
     
+       
 }
 
 .imgEspecialidadesTec img {
@@ -406,7 +439,8 @@ img {
     width: 100%; 
     max-width: 300px; 
     height: 300px;
-   margin-top:5% ;
+     margin-top:5% ;
+     
 
 }
 
@@ -458,7 +492,7 @@ img {
 
 
 @media (max-width: 480px) {
-  
+ 
 
     .imgConvite img {
         max-width: 250px;
@@ -477,7 +511,7 @@ img {
     align-items: center; 
     justify-content: center; 
     width: 100%; 
-    margin: 20% auto;
+    margin:  auto;
     gap: 20px; 
     min-height: 10vh; 
   
@@ -699,7 +733,7 @@ footer ul{
     .botao_barrinha2{
         margin-left: 50%;
     }
-.imgclientes{
+.imgclientes, .solo{
     margin-top: 30%;
 }
 }

@@ -4,22 +4,20 @@ function toggleCard(card) {
  
   var header=document.getElementById('header');
   var nav =document.getElementById('navegacao');
-  var showSideBar=false;
+  var showSideBar=true;
   
   function togglesidebar(){
     showSideBar = !showSideBar; 
   
     if(showSideBar){
-
-      navegacao.style.marginLeft='-300vw';
-   
+      navegacao.style.visibility='hidden';
     }
     else{
-      navegacao.style.marginLeft="-65vw";
-     
-  
+      navegacao.style.visibility="visible";
     }
-   
+    if(window.length<1024){
+      window
+    }
   }
   function ModoEScuro(){
     document.body.style.backgroundColor = "#3236ab"; 
